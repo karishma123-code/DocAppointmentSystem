@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> login </title>
+  <link rel="stylesheet" href="C:\html\Login.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".login-form").hide();
+      $(".login").css("background","none");
+
+      $(".login").click(function(){
+        $(".signup-form").hide();
+        $(".login-form").show();
+        $(".signup").css("background","none");
+        $(".login").css("background","#fff");
+      });
+
+      $(".signup").click(function(){
+        $(".signup-form").show();
+        $(".login-form").hide();
+        $(".signup").css("background","#fff");
+        $(".login").css("background","none");
+      });
+      $(".btn").click(function(){
+        $(".input").val("");
+      });
+    });
+  </script>
+</head>
+<body background="C:\Users\jesna\Downloads\Myproject-main\Myproject-main\4893666.jpg">
+
+<div class="container">
+  <div class="signup">sign up</div>
+  <div class="login">log in</div>
+
+  <div class="signup-form">
+    <input type="text" placeholder="Your Email Address" class="input"><br>
+    <input type="text" placeholder="Choose a Username" class="input"><br>
+    <input type="password" placeholder="Choose a Password" class="input"><br>
+    <div class="btn">create account</div>
+  </div>
+
+  <div class="login-form">
+    <input type="text" class="input" placeholder="Email or Password"><br>
+    <input type="password" class="input" placeholder="Password"><br>
+    <div class="btn">log in</div>
+    <span><a href="#">Forgot Username/Password</a></span>
+  </div>
+
+</div>
+
+</body>
